@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(./desertimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left img{
+    margin: 5vw;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+
+.right ul{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 5vw;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 2.3vw;
+    color: #fff;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-center{
+    width: 70vw;
+
+}
+.left-center h1{
+    font-size: 10vw;
+    margin: 1vw 6vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.left-center p{
+    font-size: 1vw;
+    margin: 1vw 6vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.right-center{
+    margin: 4vw;
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 240px 240px;
+    gap: 1.4vw;
+}
+.card1{
+    padding: 2.3vw;
+    margin: 1vw;
+    border-radius: 20px;
+    background-image: url(./img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card2{
+    padding: 2.3vw;
+    margin: 1vw;
+    border-radius: 20px;
+    background-image: url(./img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card3{
+    padding: 2.3vw;
+    margin: 1vw;
+    border-radius: 20px;
+    background-image: url(./img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card4{
+    padding: 2.3vw;
+    margin: 1vw;
+    border-radius: 20px;
+    background-image: url(./img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card h3{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    font-weight: 700;
+    color: #faf8f8ee;
+}
+.card p{
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #fff;
+}
+.card h3:hover{
+    color: #000;
+}
+.card:hover{
+    transition: ease;
+    position: relative;
+    transition-duration: 1s;
+    margin-top: 10px;
+}
+button{
+    color: rgb(0, 0, 0);
+    margin-left: 6vw;
+    height: 3vw;
+    width: 8vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgb(23, 97, 208);
+}
+
+@media (max-width:600px) {
+    body{
+        background-size: auto;
+        background-position: center;
+    }
+    .left img{
+        width: 40px;
+        height: 40px;
+    }
+    ul li a{
+        font-size: 5vw;
+    }
+    .center{
+        display: block;
+    }
+    .left-center{
+        width: 100%;
+        margin: 1vw 4vw;
+    }
+    .left-center h1{
+        font-size: 20vw;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .left-center p{
+        font-size: 5vw;
+    }
+    button{
+        height: 13vw;
+        width: 80vw;
+        font-size: 5vw;
+    }
+    .right-center{
+        margin: 4vw;
+        display: inline-block;
+        width: 90vw;
+    }
+    .card{
+        margin: 1vw 5vw;
+        width: 340px;
+        height: 250px;
+    }
+    .card h3{
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 1vw;
+        font-weight: 700;
+        color: #faf8f8ee;
+    }
+    .card p{
+        font-size: 5vw;
+        margin: 1vw 4vw;
+    }
+}
